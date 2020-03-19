@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--포스터-->
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                />
+
+            <!--제목-->
+            <TextView
+                android:id="@+id/info1"
+                android:layout_toRightOf="@+id/iv_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="영화 제목:"
+                android:fontFamily="@font/kor4"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/info1"
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kor2"/>
+
+            <!--장르-->
+            <!--<TextView
+                android:id="@+id/info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info1"
+                android:layout_toRightOf="@+id/iv_poster"
+                android:text="장르:"
+                android:fontFamily="@font/kor4"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/info_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/kor2"/>
+            -->
+            <!--평점-->
+            <TextView
+                android:id="@+id/info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="평균 평점:"
+                android:layout_below="@+id/info1"
+                android:layout_toRightOf="@id/iv_poster"
+                android:fontFamily="@font/kor4"
+                android:textSize="18dp"/>
+            <RatingBar
+                android:id="@+id/info_star"
+                android:layout_below="@+id/info1"
+                android:layout_toRightOf="@+id/info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="0.5"
+                android:max="5"
+                style="?android:attr/ratingBarStyleSmall"/>
+
+            <!--줄거리-->
+            <TextView
+                android:id="@+id/info4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="줄거리:"
+                android:layout_below="@+id/info3"
+                android:layout_toRightOf="@+id/iv_poster"
+                android:fontFamily="@font/kor4"
+                android:textSize="20dp"/>
+
+            <ScrollView
+                android:layout_width="170dp"
+                android:layout_height="152dp"
+                android:layout_below="@+id/info3"
+                android:layout_alignBottom="@+id/info3"
+                android:layout_marginBottom="-153dp"
+                android:layout_toRightOf="@+id/info4">
+
+                <TextView
+                    android:id="@+id/tv_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </ScrollView>
+
+        </RelativeLayout>
+        <!--사용자가 쓸 별점-->
+        <RatingBar
+            android:id="@+id/rtbMovieStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="0.5" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edtMovieMemo"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="#00CCB5"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/btnInsert"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mouse"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/coment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00CCB5"
+            android:dividerHeight="1dp"
+            android:listSelector="#C2E7E3">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2E7E3"
+    android:gravity="center_vertical"
+    android:padding="50dp">
+    <ImageButton
+        android:background="#00ff0000"
+        android:id="@+id/btnLclose"
+        android:src="@drawable/close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="0sp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="right|top"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/loginicon"
+        android:layout_gravity="center"
+        />
+
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/nanum"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edtPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="PW"
+        android:fontFamily="@font/nanum"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+
+
+
+    <Button
+        android:id="@+id/btnLg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#009688"
+        android:text="LOGIN"
+        android:fontFamily="@font/eng1"
+        android:textSize="28dp"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:id="@+id/chkIdSave"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 저장하기"
+        android:fontFamily="@font/kor1"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="혹시 회원이 아니세요?"
+        android:fontFamily="@font/nanum"
+        android:textColor="#797979" />
+
+    <Button
+        android:id="@+id/btnRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ffa91f"
+        android:text="회원가입 하러 가기"
+        android:fontFamily="@font/kor2"
+        android:textSize="18sp"
+        android:textColor="#fcefd6" />
+
+</LinearLayout>
+

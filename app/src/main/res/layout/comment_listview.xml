@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RatingBar
+            android:id="@+id/coment_getstar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5" />
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성자:"/>
+        <TextView
+            android:id="@+id/coment_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홍길동"/>
+        <TextView
+            android:id="@+id/coment_cal"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="2019-05-30" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/coment_LP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+</LinearLayout>

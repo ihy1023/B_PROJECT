@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="200dp"
+                android:layout_height="300dp"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="20dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_original_title"
+                android:paddingLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_release_date"
+                android:paddingLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_overview"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평점 : "
+                    android:fontFamily="@font/kor4"
+                    android:textSize="25dp"
+                    android:layout_centerVertical="true"/>
+                <RatingBar
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/rtbMovieStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:stepSize="0.5"
+                    android:max="5"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="의견 : "
+                    android:fontFamily="@font/kor4"
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/edtMovieMemo"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btnInsert"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/mouse"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

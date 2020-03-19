@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genre">
+        <item>액션</item>
+        <item>SF/판타지</item>
+        <item>로멘스</item>
+        <item>코메디</item>
+        <item>드라마</item>
+        <item>스포츠</item>
+        <item>전쟁</item>
+        <item>다큐멘터리</item>
+        <item>애니메이션</item>
+    </string-array>
+</resources>

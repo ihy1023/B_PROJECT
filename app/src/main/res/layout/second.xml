@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back"
+            android:background="#7E6C7E"/>
+    </LinearLayout>
+
+
+    <ViewFlipper
+        android:background="#000000"
+
+        android:id="@+id/viewFlipper1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent" >
+
+
+        ​
+
+        <ImageView
+
+            android:id="@+id/imageView1"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/s1" />
+
+        ​
+
+        <ImageView
+
+            android:id="@+id/imageView2"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/s3" />
+
+        ​
+
+        <ImageView
+
+            android:id="@+id/imageView3"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/s3" />
+
+        ​
+
+        <ImageView
+
+            android:id="@+id/imageView4"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/s4" />
+
+        ​
+
+        <ImageView
+
+            android:id="@+id/imageView5"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/s5" />
+
+        ​
+
+        <ImageView
+
+            android:id="@+id/imageView6"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/s6" />
+    </ViewFlipper>
+
+
+</LinearLayout>
